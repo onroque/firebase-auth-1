@@ -1,10 +1,10 @@
 <template>
-$END$
+  <h1>Crud</h1>
 </template>
 
 <script>
 export default {
-name: "Crud.vue"
+  name: "Crud.vue"
 }
 </script>
 

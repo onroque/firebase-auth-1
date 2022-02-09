@@ -1,10 +1,10 @@
 <template>
-$END$
+  <h1>Perfil</h1>
 </template>
 
 <script>
 export default {
-name: "Perfil.vue"
+  name: "Perfil.vue"
 }
 </script>
 
