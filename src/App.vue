@@ -1,23 +1,22 @@
 <template>
-  <cargando v-if="loading" />
+  <Cargando v-if="loading" class="mt-5" />
   <div v-else>
-    <navbar />
+    <Navbar />
     <div class="container">
-      <router-view />
+      <router-view/>
     </div>
   </div>
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue";
-import Cargando from "./components/Cargando.vue";
+import Navbar from "./components/Navbar";
+import Cargando from "./components/Cargando";
 import { firebase } from "./firebase";
-import { ref } from "@vue/reactivity";
-import { onMounted } from "@vue/runtime-core";
+import { ref, onMounted } from "vue";
 export default {
   components: {
     Navbar,
-    Cargando,
+    Cargando
   },
 
   setup() {

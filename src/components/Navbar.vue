@@ -5,7 +5,10 @@
         {{ userName }}
       </router-link>
       <div>
-        <button class="btn btn-primary" @click="signIn" v-if="!isAuthenticated">
+        <button
+            class="btn btn-primary"
+            @click="signIn"
+            v-if="!isAuthenticated">
           Acceder
         </button>
         <div v-else>
@@ -19,9 +22,9 @@
 </template>
 
 <script>
-import { useUser } from "../../composables/useUser";
+import { useUser } from "../composables/useUser";
 import { useAuth } from "@vueuse/firebase";
-import { computed } from "@vue/runtime-core";
+import { computed } from "vue";
 export default {
   setup() {
     const { signIn, signOut } = useUser();
