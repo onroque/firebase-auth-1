@@ -22,3 +22,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Link to app
+```
+https://firestore-auth-1-9ccfa.web.app/
+```
